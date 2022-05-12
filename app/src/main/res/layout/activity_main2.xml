@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECABAB"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:weightSum="5"
+    tools:context=".MainActivity2">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="70dp"
+        android:layout_weight="0.75"
+        android:background="#EA6E6E"
+        android:ems="10"
+        android:hint="NAME:"
+        android:inputType="textPersonName"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.75"
+        android:background="#EA6E6E"
+        android:ems="10"
+        android:hint="CITY:"
+        android:inputType="textPersonName"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.75"
+        android:background="#EA6E6E"
+        android:ems="10"
+        android:hint="CONTACT:"
+        android:inputType="textPersonName"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.75"
+        android:background="#EA6E6E"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="BLOOD GROUP:"
+            android:textColor="#020202"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="230dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#EA6E6E"
+            android:onClick="submit"
+            android:text="submit"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</LinearLayout>
